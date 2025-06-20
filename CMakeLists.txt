@@ -3,6 +3,10 @@ project(TaskBoard)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Enable automatic invocation of Qt's Meta-Object Compiler for classes
+# using the Q_OBJECT macro.
+set(CMAKE_AUTOMOC ON)
+
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(taskboard
